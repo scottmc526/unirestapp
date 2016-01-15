@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var unirest = require('unirest');
+var dotenv = require('dotenv').load(); 
 var apiKey = process.env.NYT_API_KEY;
 
 
