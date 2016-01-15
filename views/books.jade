@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  if books 
+    each book in books
+      h2= book.title 
+      p= 'by '
+        em= book.author
+      img(src=book.book_image)
